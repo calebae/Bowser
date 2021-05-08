@@ -1,0 +1,19 @@
+---
+title: "How to use Bowser"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{How to use Bowser}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Bowser)
+```
