@@ -17,10 +17,11 @@ RoxygenNote: 7.1.1
 Imports: 
     ANTsR,
     rdist,
-    ANTsRCore,
-    extrantsr,
+    ANTsRCore (>= 0.3.4),
+    extrantsr (>= 3.1),
     dplyr,
-    neurobase,
+    neurobase (>= 1.27.11),
+    parallel (>= 2.14.0),
     mclust,
     betareg,
     mmand
@@ -28,4 +29,10 @@ Suggests:
     rmarkdown,
     knitr,
     lattice
+Remotes: 
+  neuroconductor/ANTsR@bb8aeacac74c9969fe0693cffb82291ba192fe31,
+  neuroconductor/ANTsRCore@55d658eb9f3e265a3dd11aea0d423d876cb2794c,
+  neuroconductor/extrantsr@eb3e9ab6e4a081ef9134ae2b47260817f44b2834,
+  jonclayden/mmand,
+  neuroconductor/neurobase@69edde6d85b13cf182ed5990e6c4166795128977,
 VignetteBuilder: knitr
