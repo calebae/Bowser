@@ -17,3 +17,20 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(Bowser)
 ```
+
+```{r}
+mask_dat = system.file("extdata", "lung_template_mask.nii.gz", package = "Bowser")
+background_dat = system.file("extdata", "lung_template_meanHU.nii.gz", package = "Bowser")
+
+dat<- getSimData(mask = mask_dat,
+           background.img = background_dat,
+           location = c(26,16),
+           K = 1,
+           size = 3,
+           int = 300,
+           set.seed = 1)
+```
+
+```{r}
+image(dat)
+```
