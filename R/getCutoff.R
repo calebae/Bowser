@@ -7,7 +7,6 @@
 #'
 #' @return Intersection point where the density1 and density2 cross
 #'
-#' @examples
 
 
 getCutoff <- function(mclust.object, density1, density2){
