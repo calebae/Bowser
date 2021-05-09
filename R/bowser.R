@@ -15,7 +15,7 @@ bowser <- function(image.mat, interval.size = 0.1, r = 6, vacuum.size = 30){
 
 
   datForClustr <- image.mat[!is.na(image.mat)]
-  result <- Mclust(datForClustr, G=1:2)
+  result <- Mclust(datForClustr, G=1:2, interactive = FALSE)
 
   den1 <- density(datForClustr[result$classification==1])
   den2 <- density(datForClustr[result$classification==2])
@@ -34,7 +34,7 @@ bowser <- function(image.mat, interval.size = 0.1, r = 6, vacuum.size = 30){
   image.Vacuum <- Vacuum(image.Connected, size = vacuum.size)
   image.final <- mmand::components(image.Vacuum, q)
 
-  num.Cluster <- max(image.final, na.rm=T)}else{
+  num.Cluster <- length(unique(as.vector(image.final[!is.na(image.final)])))}else{
     num.Cluster = 0
   }
 
