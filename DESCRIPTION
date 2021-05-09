@@ -25,11 +25,12 @@ Imports:
     mclust,
     betareg,
     mmand,
-    parallel
+    parallel,
+    ITKR
 Suggests: 
     rmarkdown,
     knitr,
     lattice
 Remotes: 
-  ANTsX/ANTsRCore, ANTsX/ANTsR, muschellij2/extrantsr, muschellij2/neurobase
+  ANTsX/ANTsRCore, ANTsX/ANTsR, muschellij2/extrantsr, muschellij2/neurobase, stnava/ITKR
 VignetteBuilder: knitr
