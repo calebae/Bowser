@@ -4,36 +4,21 @@
 \alias{getSimData}
 \title{Generate the data for simulation}
 \usage{
-getSimData(
-  mask.img,
-  background.img,
-  x_location,
-  y_location,
-  K,
-  sizes,
-  ints,
-  set.seed = 1
-)
+getSimData(mask.img, background.img, location, size, int)
 }
 \arguments{
 \item{mask.img}{Maksed image}
 
 \item{background.img}{Image to be used to generate the normal state}
 
-\item{x_location}{Location in X axis of clusters to be simulated}
+\item{location}{Location of cluster to be simulated}
 
-\item{y_location}{Location in Y axis of clusters to be simulated}
-
-\item{K}{Number of clusters to be simulated}
-
-\item{set.seed}{seed}
-
-\item{size}{Size of clusters to be simulated}
+\item{size}{Size of cluster to be simulated}
 
 \item{int}{How high the cluster value should be}
 }
 \value{
-Image with clusters
+Image with cluster
 }
 \description{
 Generate the data for simulation

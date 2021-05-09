@@ -24,7 +24,8 @@ Imports:
     parallel (>= 2.14.0),
     mclust,
     betareg,
-    mmand
+    mmand,
+    parallel
 Suggests: 
     rmarkdown,
     knitr,

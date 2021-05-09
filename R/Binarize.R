@@ -5,6 +5,7 @@
 #' @param intersection.point Cutoff value to binarize the image
 #'
 #' @return Binarized image
+#' @export
 #'
 
 Binarize <- function(image, intersection.point){

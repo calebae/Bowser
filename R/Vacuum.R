@@ -6,6 +6,7 @@
 #'
 #' @return Matrix (or array) with noise removed
 #'
+#' @export
 
 Vacuum <- function(image, size = 30){
 

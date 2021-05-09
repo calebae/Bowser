@@ -4,7 +4,7 @@
 \alias{getCutoff}
 \title{Get a intersection point from two densities}
 \usage{
-getCutoff(mclust.object, density1, density2)
+getCutoff(mclust.object, density1, density2, interval)
 }
 \arguments{
 \item{mclust.object}{Object obtained from Mclust().}
@@ -12,6 +12,8 @@ getCutoff(mclust.object, density1, density2)
 \item{density1}{Density object of cluster 1 obtained from density().}
 
 \item{density2}{Density object of cluster 2 obtained from density().}
+
+\item{interval}{Interval to approximate the intersection point.}
 }
 \value{
 Intersection point where the density1 and density2 cross
