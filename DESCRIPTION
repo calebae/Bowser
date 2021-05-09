@@ -26,7 +26,8 @@ Imports:
     betareg,
     mmand,
     parallel,
-    ITKR
+    ITKR,
+    git
 Suggests: 
     rmarkdown,
     knitr,
