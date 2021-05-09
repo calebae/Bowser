@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Generate the data for simulation — getSimData • Bowser</title>
+<title>Unsupervised bayesian method to estimate the number of clusters — bowser • Bowser</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Generate the data for simulation — getSimData" />
-<meta property="og:description" content="Generate the data for simulation" />
+<meta property="og:title" content="Unsupervised bayesian method to estimate the number of clusters — bowser" />
+<meta property="og:description" content="Unsupervised bayesian method to estimate the number of clusters" />
 
 
 
@@ -106,45 +106,43 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Generate the data for simulation</h1>
+    <h1>Unsupervised bayesian method to estimate the number of clusters</h1>
     
-    <div class="hidden name"><code>getSimData.Rd</code></div>
+    <div class="hidden name"><code>bowser.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Generate the data for simulation</p>
+    <p>Unsupervised bayesian method to estimate the number of clusters</p>
     </div>
 
-    <pre class="usage"><span class='fu'>getSimData</span><span class='op'>(</span><span class='va'>mask.img</span>, <span class='va'>background.img</span>, <span class='va'>location</span>, <span class='va'>size</span>, <span class='va'>int</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>bowser</span><span class='op'>(</span><span class='va'>image.mat</span>, interval.size <span class='op'>=</span> <span class='fl'>0.1</span>, r <span class='op'>=</span> <span class='fl'>6</span>, vacuum.size <span class='op'>=</span> <span class='fl'>30</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>mask.img</th>
-      <td><p>Maksed image</p></td>
+      <th>image.mat</th>
+      <td><p>Raw image which the number of clusters should be estimated</p></td>
     </tr>
     <tr>
-      <th>background.img</th>
-      <td><p>Image to be used to generate the normal state</p></td>
+      <th>interval.size</th>
+      <td><p>Interval size that used when binarize the image</p></td>
     </tr>
     <tr>
-      <th>location</th>
-      <td><p>Location of cluster to be simulated</p></td>
+      <th>r</th>
+      <td><p>Width of the neighborhood when applying the median filtering</p></td>
     </tr>
     <tr>
-      <th>size</th>
-      <td><p>Size of cluster to be simulated</p></td>
-    </tr>
-    <tr>
-      <th>int</th>
-      <td><p>How high the cluster value should be</p></td>
+      <th>vacuum.size</th>
+      <td><p>Minimum size of clusters</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>Image with cluster</p>
+    
+
+
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
